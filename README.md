@@ -1,6 +1,7 @@
 # Installation
 
 `git clone https://github.com/dezerr/emailValidator.git`
+<br>Node.js is required.
 
 # How it works
 Launch with "node app.js" then after adding as arguments the email addresses separated by commas.<br>
