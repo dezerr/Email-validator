@@ -10,7 +10,7 @@ Done that way :
 </table>
 
 `node app.js email.example.com, anothermail.com`<br>
-**Don't put spaces between email addresses**
+**Don't put spaces between email addresses.**
 
 <table>
 <tr>
