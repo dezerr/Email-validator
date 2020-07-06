@@ -1,14 +1,12 @@
-var validator = require('validator');
+const validator = require('validator');
 
-let emails = [
-    "johndoe.xyz",
-    "james.flooàgmail.fr",
-    "nodemonjs@caart.fr",
-    "aloecc@fqsfsqfsq.ze",
-    "jesuispas"
-]
+try {
+    let emails = process.argv[2].split(',');
 
-emails.map((email) => {
-   let yesOrNo = validator.isEmail(email)
-    console.log(`${email}: ${yesOrNo}`)
-})
+    emails.map((email) => {
+        let yesOrNo = validator.isEmail(email)
+        console.log(`${email}: ${yesOrNo}`)
+    })
+} catch (e) {
+    console.log("Erreur : " + e)
+}
